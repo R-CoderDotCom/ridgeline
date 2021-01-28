@@ -7,6 +7,11 @@ I created this package beacause I wanted to add the function on a document witho
 
 The package is based on [a code by Karolis Koncevicius](http://karolis.koncevicius.lt/posts/r_base_plotting_without_wrappers/).
 
+
++ Follow me on [Twitter](https://twitter.com/RCoderWeb)
++ Follow me on [Facebook](https://www.facebook.com/RCODERweb)
++ Visit my [R programming site](https://r-coder.com/)
+
 ## Installation
 
 ```r
