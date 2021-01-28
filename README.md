@@ -3,7 +3,7 @@ A function for creating ridgeline plots in base R
 
 ## Why this package?
 
-I created this package beacause I wanted to add the function on a document without displaying the full code and because I think there is no other package implementing ridgeline plots in base R. However, I recommend you using [ggridges](https://cran.r-project.org/web/packages/ggridges/) (for ggplto2), which have more features than this package.
+I created this package beacause I wanted to add the function on a document without displaying the full code and because I think there is no other package implementing ridgeline plots in base R. However, I recommend you using [ggridges](https://cran.r-project.org/web/packages/ggridges/) (for ggplto2), which has more features than this package.
 
 The package is based on [a code by Karolis Koncevicius](http://karolis.koncevicius.lt/posts/r_base_plotting_without_wrappers/).
 
