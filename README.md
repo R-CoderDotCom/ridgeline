@@ -17,6 +17,8 @@ The package is based on [a code by Karolis Koncevicius](http://karolis.koncevici
 ```r
 # install.packages("remotes")
 remotes::install_github("R-CoderDotCom/ridgeline@main")
+
+library(ridgeline)
 ```
 
 ## Usage
