@@ -82,7 +82,7 @@ ridgeline <- function(x, y, bw = "nrd0", mode = FALSE, main, xlab, ylab, col = "
 
 
   } else {
-    Map(polygon, xs, ys, col = cols)
+    Map(polygon, xs, ys, col = cols, border = border)
   }
 
   axis(1, tck = -0.015)
