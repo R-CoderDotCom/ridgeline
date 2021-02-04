@@ -44,7 +44,7 @@ ridgeline <- function(x, y, bw = "nrd0", mode = FALSE, main, xlab, ylab, col = "
   ys <- Map(`+`, ys, length(ys):1)
 
   op <- par(no.readonly = TRUE)
-  par(mar = c(5.1, 5.1, 4.1, 2.1))
+  par(mar = op$mar)
   plot.new()
   plot.window(xlim = range(xs), ylim = c(1, length(ys) + 1.5))
   abline(h = length(ys):1, col = col)
