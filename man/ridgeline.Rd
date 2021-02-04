@@ -18,7 +18,8 @@ ridgeline(
   lwd = 1,
   bty = "o",
   labels = NULL,
-  palette
+  palette,
+  axes = TRUE
 )
 }
 \arguments{
@@ -49,6 +50,8 @@ ridgeline(
 \item{labels}{If specified, overrides the labels of the Y-axis}
 
 \item{palette}{Color, colors or a color palette for the density areas}
+
+\item{axes}{If FALSE, removes the X-axis}
 }
 \description{
 Ridgeline plot

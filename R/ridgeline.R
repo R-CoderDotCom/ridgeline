@@ -14,6 +14,7 @@
 #' @param bty Box type of the plot
 #' @param labels If specified, overrides the labels of the Y-axis
 #' @param palette Color, colors or a color palette for the density areas
+#' @param axes If FALSE, removes the X-axis
 #'
 #' @importFrom grDevices hcl.colors
 #' @importFrom graphics abline axis box mtext par plot.new plot.window polygon segments title
@@ -21,7 +22,7 @@
 #'
 #' @export
 ridgeline <- function(x, y, bw = "nrd0", mode = FALSE, main, xlab, ylab, col = "gray", border,
-                      lty = 1, lwd = 1, bty = "o", labels = NULL, palette) {
+                      lty = 1, lwd = 1, bty = "o", labels = NULL, palette, axes = TRUE) {
 
   if(missing(main)){
     main <- NULL
@@ -82,10 +83,13 @@ ridgeline <- function(x, y, bw = "nrd0", mode = FALSE, main, xlab, ylab, col = "
 
 
   } else {
-    Map(polygon, xs, ys, col = cols, border = border, lwd = lwd, lty = lty)
+    Map(polygon, xs, ys, col = cols, border = border, lty = lty, lwd = lwd)
   }
 
+  if(axes == TRUE) {
   axis(1, tck = -0.015)
+  }
+
 
   if(!is.null(labels)) {
     if(length(labels) != length(names(dens))){
@@ -101,6 +105,4 @@ ridgeline <- function(x, y, bw = "nrd0", mode = FALSE, main, xlab, ylab, col = "
   box(bty = bty)
   par(op)
 }
-
-
 
